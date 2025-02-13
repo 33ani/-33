@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cottagecore AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="assets/your_eyes.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <div id="assistant">
+            <p>Hello! How was your day?</p>
+            <button onclick="userResponse('good')">Good</button>
+            <button onclick="userResponse('bad')">Not Good</button>
+        </div>
+        
+        <div id="password-screen" class="hidden">
+            <p>Enter the password (Hint: Three magical words to tell your gf)</p>
+            <input type="password" id="password-input">
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+
+        <div id="letter-screen" class="hidden">
+            <div class="envelope" onclick="openLetter()">
+                <div class="flap"></div>
+                <div class="body"></div>
+                <div class="letter">
+                    <p>I'm really sorry I couldn't meet you today. I know you wanted to see me, and I asked you to go back. I feel really apologetic for it. I want you to know that I love you, you matter to me, and you're incredibly important to me. ❤️</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
